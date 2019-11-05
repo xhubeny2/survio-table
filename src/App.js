@@ -22,9 +22,10 @@ const App = () => (
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
+          <Route component={() => (<div>Page not found</div>)} />
         </Switch>
       </div>
     </Router>
